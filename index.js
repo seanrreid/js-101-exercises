@@ -411,7 +411,11 @@ const tenHello = repeatString("hello", 10);
 function testFor(element) {
   try {
     var result = lvl6exercise2();
-    if (!_.isArray(result) || result.join("") !== tenHello) {
+    if (
+      result.length !== 10 ||
+      result.join(" ") !==
+        "hello hello hello hello hello hello hello hello hello hello"
+    ) {
       throw false;
     }
     showSuccess(element);
@@ -423,7 +427,7 @@ function testFor(element) {
 function testWhile(element) {
   try {
     var result = lvl6exercise3();
-    if (!_.isArray(result) || result.length !== 0) {
+    if (!Array.isArray(result) || result.length !== 0) {
       throw false;
     }
     showSuccess(element);

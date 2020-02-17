@@ -439,7 +439,7 @@ function testWhile(element) {
 function testFunction(element) {
   try {
     var result = finalFunction(8);
-    if (!_.isArray(result) || result.length !== 8) {
+    if (!Array.isArray(result) || result.length !== 8) {
       throw false;
     }
     showSuccess(element);

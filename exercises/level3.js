@@ -21,5 +21,7 @@ function lvl3exercise4() {
 
 function lvl3exercise5() {
   // Create a "hello world!" string. Return the index of the word "world".
-  return "hello world!".indexOf("world");
+  const helloWorld = "Hello World!";
+  console.log("Index of the word World is", helloWorld.indexOf("World"));
+  return helloWorld.indexOf("World");
 }

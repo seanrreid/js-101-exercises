@@ -1,8 +1,7 @@
 function lvl1exercise1() {
   // Declare a variable without instantiating it and return it!
-  // Note: This will always pass because functions return undefined when nothing is returned.
-  var variable;
-  return variable;
+    let myVariable;
+    return myVariable;
 }
 
 function lvl1exercise2() {
